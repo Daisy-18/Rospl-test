@@ -466,7 +466,11 @@ def blog(request):
     blogs = Blog.objects.all().order_by('-date')   # Get all blog posts
     return render(request, 'app/blog.html', {'blogs':blogs})
 
+<<<<<<< HEAD
 base_dir = 'C:\\Users\\SANIYA\\Downloads\\Rospl-Project\\food'
+=======
+base_dir = 'E:\\ROSPL_new\\food'
+>>>>>>> 05af06f1a07c9f3e482aaf2221ab427ea12f6211
 
 # Define the pickle directory
 pickle_dir = os.path.join(base_dir, 'pickle')

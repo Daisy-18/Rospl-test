@@ -85,6 +85,7 @@ urlpatterns = [
 # admin.site.site_title = "Foodie"
 # admin.site.site_index_title = "Welcome to Foodie"
 
+<<<<<<< HEAD
 # urlpatterns = [
 #       path("", views.home),
 #       path("home/", views.homeview.as_view(), name="home"),
@@ -95,4 +96,16 @@ urlpatterns = [
 
 
 # ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+=======
+urlpatterns = [
+      path("", views.home),
+      path("home/", views.homeview.as_view(), name="home"),
+      path("about/", views.aboutview.as_view(), name="about"),
+      path("contact/", views.contactview.as_view(), name="contact"),
+      path("shop/", views.shopview.as_view(), name="shop"),
+      #path('blog/', views.blog, name='blog')
+
+
+]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+>>>>>>> 05af06f1a07c9f3e482aaf2221ab427ea12f6211
 
